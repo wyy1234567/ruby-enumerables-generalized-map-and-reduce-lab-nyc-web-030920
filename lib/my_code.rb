@@ -8,3 +8,8 @@ def map(array)
   end
   ans
 end
+
+def reduce(array, starting = 0)
+  ans = starting
+  index = 0 
+  while index < array.length
