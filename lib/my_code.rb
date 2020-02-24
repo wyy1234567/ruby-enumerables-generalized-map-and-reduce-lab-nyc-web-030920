@@ -12,4 +12,8 @@ end
 def reduce(array, starting = nil)
   if starting
     ans = starting
+  else
+    ans = 0 
+  end
+  
 end
