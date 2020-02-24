@@ -9,12 +9,7 @@ def map(array)
   ans
 end
 
-def reduce(array, starting = 0)
-  ans = starting
-  index = 0 
-  while index < array.length do 
-    ans = yield(array, array[index])
-    index += 1 
-  end
-  ans
+def reduce(array, starting = nil)
+  if starting
+    ans = starting
 end
