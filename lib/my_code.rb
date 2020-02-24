@@ -12,10 +12,11 @@ end
 def reduce(array, starting = nil)
   if starting
     ans = starting
+    index = 0 
   else
-    ans = 0 
+    ans = array[0] 
+    index = 1 
   end
-  index = 0 
   while index < array.length do 
     ans = yield(ans, array[index])
     index += 1 
