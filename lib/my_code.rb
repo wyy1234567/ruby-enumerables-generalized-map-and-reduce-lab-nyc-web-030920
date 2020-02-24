@@ -12,4 +12,5 @@ end
 def reduce(array, starting = 0)
   ans = starting
   index = 0 
-  while index < array.length
+  while index < array.length do 
+    ans += yield
